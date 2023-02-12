@@ -1,5 +1,6 @@
 <script setup>
 import Navbar from './components/Navbar.vue'
+import Footer from './components/Footer.vue'
 // 'bootstrap' import = imports popper as well
 import 'bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -11,8 +12,10 @@ import "bootstrap/dist/css/bootstrap.min.css"
 <template>
 
   <Navbar/>
-  
-  
+
+  <router-view></router-view>
+
+  <Footer/>
 
 
 </template>
