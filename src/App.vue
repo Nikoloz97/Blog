@@ -1,5 +1,6 @@
 <script setup>
 import HelloWorld from './components/Main/Main.vue'
+import "bootstrap/dist/css/bootstrap.min.css"
 </script>
 
 <template>
