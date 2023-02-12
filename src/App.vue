@@ -1,11 +1,18 @@
 <script setup>
-import Main from './components/Main/Main.vue'
+import Navbar from './components/Navbar.vue'
+// 'bootstrap' import = imports popper as well
+import 'bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css"
+
+
+
 </script>
 
 <template>
 
-  <Main/>
+  <Navbar/>
+  
+  
 
 
 </template>
