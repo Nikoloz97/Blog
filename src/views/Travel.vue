@@ -2,7 +2,7 @@
 <p>This is travel!</p>
 </template>
 
-<script>
+<script setup>
 
 </script>
 

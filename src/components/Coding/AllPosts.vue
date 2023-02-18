@@ -2,7 +2,7 @@
     <p>This is main!</p>
     </template>
 
-<script>
+<script setup>
 
 </script>
 

@@ -1,9 +1,8 @@
 <template>
-
-
+    <p>This is slideshow!</p>
 </template>
 
-<script>
+<script setup>
 
 </script>
 

@@ -1,8 +1,8 @@
 <template>  
     <p>This is Coding</p>
     </template>
-    
-<script>
+
+<script setup>
 
 </script>
 

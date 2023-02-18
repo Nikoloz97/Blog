@@ -1,10 +1,10 @@
 <template>
 
-    <p>This is the footer!</p>
+    <p>This is the posts!</p>
 
 </template>
 
-<script>
+<script setup>
 </script>
 
 
