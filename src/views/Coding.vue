@@ -1,8 +1,10 @@
 <template>  
-    <p>This is Coding</p>
-    </template>
+    <all-posts/>
+
+</template>
 
 <script setup>
+import AllPosts from '../components/Coding/AllPosts.vue';
 
 </script>
 

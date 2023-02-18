@@ -1,8 +1,13 @@
 <template>  
-    <p>This is Health!</p>
+
+
+<all-posts/>
+
+    
 </template>    
 
 <script setup>
+import AllPosts from '../components/Health/AllPosts.vue';
 
 </script>
 

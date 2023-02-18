@@ -1,6 +1,6 @@
 <template>
 
-    <p>This is the footer!</p>
+    <p>This is the Health!</p>
 
 </template>
 
