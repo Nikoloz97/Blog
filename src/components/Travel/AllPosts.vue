@@ -17,11 +17,11 @@
             <button>Delete</button>
         </form> -->
 
-        <div v-if="travelStore.loading">Loading</div>
+        <div v-if="loading">Loading</div>
 
         <div v-else>
             <h2>List of Countries I've been to</h2>
-            <ul v-for="country in travelStore.countriesVisited">
+            <ul v-for="country in countriesVisited">
                 <li>
                     {{ country.name }}
                     <button @click="travelStore.deleteCountry(country.id)">Delete</button>
@@ -34,9 +34,11 @@
                     </form>
                 </li>
             </ul>
-            <p>Latest country I've been to is {{ travelStore.getLatestCountry}}</p>
+            <p>Latest country I've been to is {{ getLatestCountry}}</p>
         </div>
-        
+
+       
+        <button @click="travelStore.$reset">Reset</button>
 
 
     </div>
@@ -47,8 +49,12 @@
 <script setup>
 import {useTravelStore} from '../../stores/TravelStore'
 import { ref } from 'vue';
+import {storeToRefs} from 'pinia'
 
 const travelStore = useTravelStore()
+
+// Makes it so you dont have to write travelStore.loading, etc... 
+const {countriesVisited, getLatestCountry, loading} = storeToRefs(travelStore)
 
 // 'fetch' data from json datastore
 travelStore.getCountriesVisited()
