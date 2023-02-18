@@ -1,7 +1,5 @@
-<script>
-</script>
-
 <template>
+  
     <!-- Fixed-top = sticks navbar to top of page -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container-fluid">
@@ -40,5 +38,9 @@
   </div>
 </nav>
 </template>
+
+<script>
+</script>
+
 
 <style></style>
