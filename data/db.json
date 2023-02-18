@@ -1,3 +1,20 @@
 {
-    "countriesVisited": ["France", "Georgia", "Mexico", "Netherlands"]
+  "countriesVisited": [
+    {
+      "id": 1,
+      "name": "Netherlands"
+    },
+    {
+      "id": 2,
+      "name": "Germany"
+    },
+    {
+      "id": 3,
+      "name": "Armenia"
+    },
+    {
+      "id": 4,
+      "name": "Azerbaijan"
+    }
+  ]
 }

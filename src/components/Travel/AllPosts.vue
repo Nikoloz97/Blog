@@ -9,13 +9,33 @@
 
             <button>Add</button>
         </form>
+        
+        <!-- <form @submit.prevent="handleSubmit2">
+        <input type="text"
+                placeholder="Delete a country (be as accurate as possible please)..."
+                v-model="deleteCountry">
+            <button>Delete</button>
+        </form> -->
 
-        <h2>List of Countries I've been to</h2>
-        <ul v-for="countries in travelStore.countriesVisited">
-            <li>{{ countries }}</li>
-        </ul>
+        <div v-if="travelStore.loading">Loading</div>
 
-        <p>Latest country I've been to is {{ travelStore.getLatestCountry}}</p>
+        <div v-else>
+            <h2>List of Countries I've been to</h2>
+            <ul v-for="country in travelStore.countriesVisited">
+                <li>
+                    {{ country.name }}
+                    <button @click="travelStore.deleteCountry(country.id)">Delete</button>
+
+                    <form @submit.prevent="handleSubmit2">
+                        <input type="text"
+                                placeholder="Rename country..."
+                                v-model="renamedCountry">
+                                <button @click="country.id = renamedCountryIndex">Rename</button>
+                    </form>
+                </li>
+            </ul>
+            <p>Latest country I've been to is {{ travelStore.getLatestCountry}}</p>
+        </div>
         
 
 
@@ -29,12 +49,29 @@ import {useTravelStore} from '../../stores/TravelStore'
 import { ref } from 'vue';
 
 const travelStore = useTravelStore()
+
+// 'fetch' data from json datastore
+travelStore.getCountriesVisited()
+
+
 const newCountry = ref('')
 const handleSubmit = () => {
-    travelStore.addCountry(newCountry.value)
+
+    travelStore.addCountry({
+        id: travelStore.getHighestId + 1,
+        name: newCountry.value
+    })
     // Once country added to list, reset the newCountry value 
     newCountry.value = ''
 
+}
+
+const renamedCountry = ref('')
+let renamedCountryIndex = 0
+const handleSubmit2 = () => {
+
+    travelStore.renameCountry(renamedCountryIndex, renamedCountry.value)
+    renamedCountry.value = ''
 }
 
 </script>
