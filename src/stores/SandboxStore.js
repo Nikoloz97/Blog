@@ -55,11 +55,12 @@ export const useTravelStore = defineStore('travel',{
         },
 
         // PATCH request
-        async renameCountry(id, newName) {
-            const countryToRename = this.countriesVisited.find(c => c.id === id)
+        // Doesn't work (renames country, but not able to update JSON)
+        async renameCountry(Id, newName) {
+            const countryToRename = this.countriesVisited.find(c => c.id === Id)
             countryToRename.name = newName
 
-            const res = await fetch('http://localhost:3000/countriesVisited/' + id, {
+            const res = await fetch('http://localhost:3000/countriesVisited/' + Id, {
                 method: 'PATCH',
                 // deserialize 
                 body: JSON.stringify({name: newName}),

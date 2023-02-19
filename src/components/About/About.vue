@@ -1,14 +1,13 @@
 <template>
     <div>
-        <div>This is travel!</div>
-
+        <p>This is about!</p>
     </div>
 </template>
 
-<script setup>
+<script>
 
 </script>
 
-<style>
+<style scoped>
 
 </style>

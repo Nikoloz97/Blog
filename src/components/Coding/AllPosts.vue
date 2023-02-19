@@ -1,5 +1,5 @@
 <template>  
-    <p>This is main!</p>
+    <p>This is Coding!</p>
     </template>
 
 <script setup>

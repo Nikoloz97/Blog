@@ -1,7 +1,6 @@
 <template>
     <div>
-        <div>This is travel!</div>
-
+        <p>This is contact!</p>
     </div>
 </template>
 
@@ -9,6 +8,6 @@
 
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>

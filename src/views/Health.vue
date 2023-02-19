@@ -1,6 +1,5 @@
 <template>  
 
-
 <all-posts/>
 
     
