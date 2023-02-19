@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-import AllPosts from '../components/Home/AllPosts.vue';
+import AllPosts from '../components/Home/Posts/AllPosts.vue';
 import SlideShow from '../components/Home/Slideshow.vue';
 
 </script>
