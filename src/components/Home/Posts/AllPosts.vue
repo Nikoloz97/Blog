@@ -1,7 +1,7 @@
 <template>
 
     <!-- Header -->
-    <h1 class="display-1">All Posts</h1>
+<h1 class="display-1">All Posts</h1>
 
     <!-- Content -->
 <div class="row row-cols-1 row-cols-md-2 g-4">

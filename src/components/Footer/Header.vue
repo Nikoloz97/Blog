@@ -1,10 +1,11 @@
 <template>
     <!-- This is where the images will be displayed -->
 
-    <div v-for="photo in FooterPhotos">
+
+    <!-- <div v-for="photo in FooterPhotos">
         <img :src="photo.URL" 
               alt="">
-    </div>
+    </div> -->
 
 
 </template>
