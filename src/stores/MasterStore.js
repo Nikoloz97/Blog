@@ -30,6 +30,20 @@ export const useMasterStore = defineStore('master',{
             Title: "My time at bootcamp",
             PostingDate: "02/19/2023",
             Description: "This was my time at bootcamp"
+        },
+        {
+            id: 5,
+            PhotoURL: "https://www.franklin.edu/sites/default/files/styles/btcb_photo/public/fr/back%20to%20college%20blog/main%20images/iStock-1081869336.jpg?itok=FG8M8buS",
+            Title: "My time at bootcamp",
+            PostingDate: "02/19/2023",
+            Description: "This was my time at bootcamp"
+        },
+        {
+            id: 6,
+            PhotoURL: "https://www.franklin.edu/sites/default/files/styles/btcb_photo/public/fr/back%20to%20college%20blog/main%20images/iStock-1081869336.jpg?itok=FG8M8buS",
+            Title: "My time at bootcamp",
+            PostingDate: "02/19/2023",
+            Description: "This was my time at bootcamp"
         }
     ],
 

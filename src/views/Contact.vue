@@ -1,12 +1,23 @@
 <template>
-    <Contact/>
+
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col"><Links/></div>
+                <div class="col"><Form/></div>
+            </div>
+        </div>
+    </div>
+
+   
 </template>
 
 <script setup>
-import Contact from '../components/Contact/Contact.vue';
+import Form from '../components/Contact/Form.vue';
+import Links from '../components/Contact/Links.vue'
 
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
